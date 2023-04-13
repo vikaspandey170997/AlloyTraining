@@ -1,0 +1,64 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>Disable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Using Include="EPiServer" />
+    <Using Include="EPiServer.Core" />
+    <Using Include="EPiServer.DataAbstraction" />
+    <Using Include="EPiServer.DataAnnotations" />
+  </ItemGroup>
+  
+  <ItemGroup>
+    <PackageReference Include="EPiServer.CMS" Version="12.17.1" />
+    <PackageReference Include="Wangkanai.Detection" Version="5.2.0" />
+  </ItemGroup>
+  
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Translations\**\*" />
+  </ItemGroup>
+  
+  <ItemGroup>
+    <None Remove="Resources\Translations\ContentTypes.xml" />
+    <None Remove="Resources\Translations\DisplayOptions.xml" />
+  </ItemGroup>
+  
+  <ItemGroup>
+    <None Include="wwwroot\css\bootstrap-collapse.js" />
+    <None Include="wwwroot\css\bootstrap-responsive.css" />
+    <None Include="wwwroot\css\bootstrap.css" />
+    <None Include="wwwroot\css\editmode.css" />
+    <None Include="wwwroot\css\editor.css" />
+    <None Include="wwwroot\css\media.css" />
+    <None Include="wwwroot\css\style.css" />
+    <None Include="wwwroot\gfx\carouselbackground.png" />
+    <None Include="wwwroot\gfx\contact.jpg" />
+    <None Include="wwwroot\gfx\exampelspan4.png" />
+    <None Include="wwwroot\gfx\experts.png" />
+    <None Include="wwwroot\gfx\fallows-media-wide.jpg" />
+    <None Include="wwwroot\gfx\leader.png" />
+    <None Include="wwwroot\gfx\leader2.png" />
+    <None Include="wwwroot\gfx\logotype.png" />
+    <None Include="wwwroot\gfx\meet.jpg" />
+    <None Include="wwwroot\gfx\New_FDT_Press_Contact_.JPG" />
+    <None Include="wwwroot\gfx\page-type-thumbnail-article.png" />
+    <None Include="wwwroot\gfx\page-type-thumbnail-contact.png" />
+    <None Include="wwwroot\gfx\page-type-thumbnail-product.png" />
+    <None Include="wwwroot\gfx\page-type-thumbnail-standard.png" />
+    <None Include="wwwroot\gfx\page-type-thumbnail.png" />
+    <None Include="wwwroot\gfx\pdf.png" />
+    <None Include="wwwroot\gfx\person.png" />
+    <None Include="wwwroot\gfx\plan.jpg" />
+    <None Include="wwwroot\gfx\play.png" />
+    <None Include="wwwroot\gfx\playInactive.png" />
+    <None Include="wwwroot\gfx\productLandingv2.png" />
+    <None Include="wwwroot\gfx\searchbutton.png" />
+    <None Include="wwwroot\gfx\searchbuttonsmall.png" />
+    <None Include="wwwroot\gfx\track.jpg" />
+    <None Include="wwwroot\js\bootstrap.js" />
+    <None Include="wwwroot\js\jquery.js" />
+  </ItemGroup>
+</Project>
